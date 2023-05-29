@@ -8,13 +8,19 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<h4>Feedback Form</h4>
-	<form>
-		<p>Nmae <input type="text" id="name" placeholder="enter your name" requred></p>
-		<p>Portfolio <input type="text" id="portfolio" placeholder="write your portfolio" required></p>
-		<label for="favColor" >
-			<p>Favourite Color<input type="radio" id="favColor" name="favColor"></p>
-		</label>
+    Feedback Form<br><br>
+	<form method="post">
+	    <label for="name">Your Name</label>
+		<input type="text" id="name"  minlength="3" maxlength="50" required /> <br/><br>
+		<label for="portfolio">Portfolio</label>
+		<input typr="url" id="portfolio" required /><br><br>
+		<label for="favColor">Your Favourite  Color</label>
+		<input type="color" id="favColor"/><br><br>
+		<label for="likeness"> Coose Your likeness from 1 t0 100 colors</label>
+		<input type="range" id="likeness" min="1" max="100" ><br><br>
+		<button type="submit">Submit</button><br><br>
+		<button type="reset">Reset</button>
+		
 	</form>
     <script type="text/javascript" src="./script.js">
 </script>
